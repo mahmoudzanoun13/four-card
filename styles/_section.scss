@@ -1,0 +1,37 @@
+@import './variables';
+$coler1: hsl(0, 78%, 62%);
+$coler2: hsl(34, 97%, 64%);
+$coler3: hsl(180, 62%, 55%);
+$coler4: hsl(212, 86%, 64%);
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  color: hsl(229, 6%, 66%);
+  h3 {
+    color: hsl(234, 12%, 34%);
+  }
+  .col-1 {
+    @include colOne($coler3);
+  }
+  .red {
+    @include colOne($coler1);
+  }
+  .orange {
+    @include colOne($coler2);
+  }
+  .col-3 {
+    @include colOne($coler4);
+  }
+  @media (max-width: 375px) {
+    flex-direction: column;
+  }
+  .row-2 {
+    @media (max-width: 375px) {
+    margin: 0;
+  }
+  }
+}
+

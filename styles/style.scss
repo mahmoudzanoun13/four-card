@@ -1,0 +1,30 @@
+@import './header';
+@import './section';
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 1440px;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+footer {
+  @media (max-width: 375px) {
+    width: 200px;
+  }
+}
+

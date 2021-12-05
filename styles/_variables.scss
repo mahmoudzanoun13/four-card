@@ -1,0 +1,31 @@
+@mixin colOne ($color) {
+    background-color: hsl(0, 0%, 98%);
+    padding: 25px;
+    margin: 20px;
+    width: 343px;
+    height: 225px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+      0 15px 40px rgba(166, 173, 201, 0.2);
+    &::before {
+      content: '';
+      width: 337px;
+      height: 3px;
+      position: absolute;
+      top: 0;
+      left: 3px;
+      display: block;
+      background-color: $color;
+      border-radius: 500px 500px 0 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+    }
+  }
+
